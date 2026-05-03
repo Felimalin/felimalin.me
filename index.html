@@ -121,8 +121,8 @@
     }
 
     /* PAGES */
-    .page { position: relative; z-index: 1; min-height: 100vh; display: none; opacité: 0; transform: translateY (10px); } 
-    .page.active { display: block; opacity: 1; transform: translateY (0); transition: opacity 0.3 ease, transform 0.3 ease; }
+    .page { position: relative; z-index: 1; min-height: 100vh; pointer-events: none; position: absolute; opacité: 0; transform: translateY (10px); } 
+    .page.active { pointer-events: all; postition: relative; opacity: 1; transform: translateY (0); transition: opacity 0.3 ease, transform 0.3 ease; }
 
     /* ── HOME ── */
     #page-home {
